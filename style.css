@@ -1,0 +1,77 @@
+/* Reset CSS */
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+}
+
+/* Aplicando CSS */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(11, 18, 26);
+    padding: 2rem 8rem;
+    font-family: 'Lora', serif;
+}
+
+
+h1 {
+    color: rgb(242, 242, 243);
+    font-size: 5rem;
+}
+
+.imagem-logo {
+    width: 8%;
+}
+
+.arte {
+    color: rgb(156, 194, 203);
+}
+
+header {
+    margin: 3rem 0rem;
+}
+
+main {
+    display: inline-block;
+    width: 1525px;
+}
+
+.bloco-1 {
+    position: absolute;
+    width: 750px;
+    height: 320px;
+}
+
+.imagem-bloco {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.texto-bloco {
+    width: 30%;
+    height: 91%;
+    padding: 10px;
+    text-align: left;
+    color: aliceblue;
+    margin-left: 63%;
+    font-size: 17px;
+}
+
+.titulo-bloco {
+    color: rgb(156, 194, 203);
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.bloco-2 {
+    position: absolute;
+    width: 750px;
+    height: 320px;
+    margin-left: 820px;
+}
