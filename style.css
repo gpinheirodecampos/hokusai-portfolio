@@ -8,15 +8,29 @@
 }
 
 /* Aplicando CSS */
-html {
+body {
+    margin: 60px 150px 0 150px;
+    background-color: rgb(11, 18, 26);
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 93vh;
+    color: aliceblue;
+    font-size: 1.2rem;
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(11, 18, 26);
-    padding: 2rem 8rem;
-    font-family: 'Lora', serif;
-    height: 800px;
+main {
+    flex: 1;
+    margin-top: 50px;
+}
+
+header {
+    margin-bottom: 3rem;
+}
+
+.arte {
+    color: rgb(156, 194, 203);
 }
 
 h1 {
@@ -24,111 +38,69 @@ h1 {
     font-size: 5rem;
 }
 
-.imagem-logo {
-    width: 8%;
-}
-
-.arte {
-    color: rgb(156, 194, 203);
-}
-
-header {
-    margin: 3rem 0rem;
-}
-
-main {
-    display: inline-block;
-    width: 1525px;
-}
-
-.bloco-1 {
-    position: absolute;
-    width: 750px;
-    height: 320px;
-}
-
-.imagem-bloco {
-    width: 60%;
-    height: 100%;
-    float: left;
-}
-
-.texto-bloco {
-    width: 30%;
-    height: 91%;
-    padding: 10px;
-    text-align: left;
-    color: aliceblue;
-    margin-left: 63%;
-    font-size: 17px;
-}
-
-.titulo-bloco {
+h2 {
     color: rgb(156, 194, 203);
     text-align: left;
     margin-bottom: 5px;
 }
 
-.bloco-2 {
-    position: absolute;
-    width: 750px;
-    height: 320px;
-    margin-left: 820px;
+.logo {
+    width: 100px;
+}
+
+header {
+    font-size: 2rem;
+}
+
+.bloco {
+    width: 45%;
+}
+
+.img-bloco {
+    width: 400px;
+    height: 300px;
+    float: left;
+    margin-right: 40px;
+}
+
+.esquerdo {
+    float: left;
+}
+
+.direito {
+    float: right;
 }
 
 footer {
+    text-align: right;
     font-size: 15px;
     color: rgb(156, 194, 203);
-    text-align: right;
 }
 
+/* Utilizando mediaQuery */
 @media (max-width: 680px) {
-    .imagem-logo {
+    .logo {
         width: 50%;
         margin-left: 25%;
-    }
-
-    body {
-        padding: 2rem 4rem;
-    
+        margin-right: 25%;
     }
 
     h1 {
+        font-size: 4rem;
         text-align: center;
-        font-size: 3.5rem;
     }
 
-    main {
-        display: block;
-        box-sizing: border-box;
-    }
-
-    .imagem-bloco {
+    .bloco {
         width: 100%;
-        height: 400px;
-    }
-
-    .bloco-1 {
-        height: 800px;
-        width: 476px;
-    }
-
-    .texto-bloco {
-        position: absolute;
+        display: block;
+        margin-bottom: 100px;
         text-align: justify;
-        margin-top: 430px;
-        margin-left: 0px;
-        padding-left: 0px;
-        width: 476px;
-        font-size: 1.5rem;
-        height: 330px;
     }
 
-    .bloco-2 {
-        position: absolute;
-        height: 800px;
-        width: 476px;
-        margin-left: 0;
-        margin-top: 800px;
+    .img-bloco {
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
     }
 }
